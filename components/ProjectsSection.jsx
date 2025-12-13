@@ -3,7 +3,7 @@ const projects = [
     {
         id: 1,
         title: "BTheCause Project",
-        description: "A platform for users to grow into the best versions of themselves.",
+        description: "A platform for users to grow into the best versions of themselves. Worked under the company BTheCause as a Project Manager/Front-End Developer.",
         imageUrl: "/projects/BTC.png",
         projectUrl: "https://bthecause.org",
         GitUrl: "e.org",
@@ -12,7 +12,7 @@ const projects = [
     {
         id: 2,
         title: "Data Analysis Portfolio",
-        description: "Showcase interactive dashboards to draw insights from complex datasets and support informed decision-making.",
+        description: "Showcase interactive dashboards to draw insights from complex datasets and derive informed decision-making.",
         imageUrl: "/projects/DA.png",
         projectUrl: "https://public.tableau.com/app/profile/george.jereos.iii/vizzes",
         GitUrl: "e.org",
