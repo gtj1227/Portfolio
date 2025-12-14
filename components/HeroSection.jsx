@@ -9,11 +9,6 @@ export const HeroSection = () => {
         <div className="container max-w-4xl mx-auto text-center z-10">
       <div className="flex flex-col md:flex-row items-center justify-center gap-10 space-y-6 md:space-y-0">
         <div className="flex-1 space-y-6">
-            <img
-          src="/gj.png" // <-- update this path to your image
-          alt="Fill in with pic"
-          className="w-40 h-40 rounded-full object-cover shadow-lg opacity-0 animate-fade-in"
-        />
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             <span className="opacity-0 animate-fade-in">Hi, I'm</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1"> George</span>
@@ -30,6 +25,11 @@ export const HeroSection = () => {
             </a>
           </div>
         </div>
+        <img
+          src="/test1.png" 
+          alt="Fill in with pic"
+          className="w-60 h-60 rounded-full object-cover animate-fade-in md:ml-10"
+        />
       </div>
     </div>
 
