@@ -36,11 +36,11 @@ export const ContactSection = () => {
                 Feel free to reach out to me through any of the platforms below.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
                 <div className="space-y-8">
                     <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
                     
-                    <div className="space-y-6 justify-center">
+                    <div className="space-y-6 flex flex-col items-center justify-center">
                         <div className="flex items-start space-x-4">
                             <div className="p-3 rounded-full bg-primary/10">
                             <Mail className="h-6 w-6 text-primary" /> {" "}
@@ -79,10 +79,10 @@ export const ContactSection = () => {
                         </div>
                     </div>
                 </div>
-
+{/*
                 <div className="bg-card p-8 rounded-lg shadow-xs">
                     <h3 className="text-2xl font-semibold mb-6">Send Me a Message</h3>
-
+            
                     <form className="space-y-6" onSubmit={handleSubmit} >
                         <div>
                             <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -138,8 +138,9 @@ export const ContactSection = () => {
                             <Send size={16} />
                         </button>
                     </form>
-
+                    
                 </div>
+                */}
             </div>
         </div>
     </section>
