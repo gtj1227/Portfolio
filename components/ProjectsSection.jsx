@@ -1,4 +1,5 @@
 import {ArrowRight} from "lucide-react";
+import { Link } from "react-router-dom";
 const projects = [
     {
         id: 1,
@@ -14,7 +15,7 @@ const projects = [
         title: "Data Analysis Portfolio",
         description: "Showcase interactive dashboards to draw insights from complex datasets and derive informed decision-making.",
         imageUrl: "/projects/DA.png",
-        projectUrl: "https://public.tableau.com/app/profile/george.jereos.iii/vizzes",
+        projectUrl: "/DASection", // Change to internal route
         GitUrl: "e.org",
         tags: ["SQL", "Tableau", "Python"]
     },
@@ -43,15 +44,10 @@ export const ProjectsSection = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, key) => (
-                    <a
-                        key={key}
-                        href={project.projectUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover block transition-transform duration-200 hover:scale-105"
-                        style={{ textDecoration: "none" }}
-                    >
+                {projects.map((project, key) => {
+                    const isInternal = project.projectUrl.startsWith("/");
+                    const CardContent = (
+                        <>
                         <div className="h-48 overflow-hidden">
                             <img 
                             src={project.imageUrl} 
@@ -59,10 +55,9 @@ export const ProjectsSection = () => {
                             className="w-full h-full object-cover transition-transofrm duration-500 group-hover:scale-110"
                             />
                         </div>
-
                         <div className="p-6">
                             <div className="flex flex-wrap gap-2 mb-4">
-                                {project.tags.map((tag) => (
+                                {project.tags && project.tags.map((tag) => (
                                     <span className="px-2 py-1 text-xs font-medium rounded-full bg-secondary text-secondary-foreground" >
                                         {tag}
                                     </span>
@@ -74,8 +69,30 @@ export const ProjectsSection = () => {
                                 
                             </div>
                         </div>
-                    </a>
-                ))}
+                        </>
+                    );
+                    return isInternal ? (
+                        <Link
+                            key={key}
+                            to={project.projectUrl}
+                            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover block transition-transform duration-200 hover:scale-105"
+                            style={{ textDecoration: "none" }}
+                        >
+                            {CardContent}
+                        </Link>
+                    ) : (
+                        <a
+                            key={key}
+                            href={project.projectUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover block transition-transform duration-200 hover:scale-105"
+                            style={{ textDecoration: "none" }}
+                        >
+                            {CardContent}
+                        </a>
+                    );
+                })}
             </div>
 
             <div className="text-center mt-12">
