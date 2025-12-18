@@ -2,16 +2,6 @@ import {ArrowRight} from "lucide-react";
 import { Link } from "react-router-dom";
 const projects = [
     {
-        id: 1,
-        title: "BTheCause Project",
-        description: "A platform for users to grow into the best versions of themselves. Worked under the company BTheCause as a Project Manager/Front-End Developer.",
-        imageUrl: "/projects/BTC.png",
-        projectUrl: "https://bthecause.org",
-        GitUrl: "e.org",
-        tags: ["React",  "TailwindCSS", "Laravel", "PHP", "MariaDB"]
-    },
-    {
-        id: 2,
         title: "Data Analysis Portfolio",
         description: "Showcase interactive dashboards to draw insights from complex datasets and derive informed decision-making.",
         imageUrl: "/projects/DA.png",
@@ -20,12 +10,26 @@ const projects = [
         tags: ["SQL", "Tableau", "Python"]
     },
     {
-        id: 3,
+        title: "BTheCause Project",
+        description: "A platform for users to grow into the best versions of themselves. Worked under the company BTheCause as a Project Manager/Front-End Developer.",
+        imageUrl: "/projects/BTC.png",
+        projectUrl: "https://bthecause.org",
+        GitUrl: "e.org",
+        tags: [ "Project Management", "React",  "TailwindCSS", "Laravel", "PHP", "MariaDB"]
+    },
+    {
         title: "Project Management Experience: Producer's Assistant (NTJ Entertainment)",
         description: "Assisted in coordinating and managing various aspects of event production, ensuring smooth operations and successful execution.",
         imageUrl: "/projects/TJ.png",
         projectUrl: "https://www.instagram.com/thentjproduction/",
         tags: ["Project Management", "Stakeholder Coordination", "Time Management", "Communication", ]
+    },
+    {
+        title: "Primewell Clinic Project",
+        description: "SaaS platform for patients to book appointments, access medical records, and communicate with healthcare providers online.",
+        imageUrl: "/projects/primewell.png",
+        projectUrl: "https://primewellclinic.com/",
+        tags: ["React", "TailwindCSS", "Javascript", "Node.js", "Express", "SQL"]
     }
 ]
 
