@@ -10,6 +10,13 @@ const projects = [
         imageUrl: "/projects/test.png",
         projectUrl: "https://github.com/gtj1227/Warehouse-Analytics/tree/main",
         tags: ["SQL"] // Add tags property to fix error
+    },
+    {
+        title: "Data Analysis Portfolio",
+        description: "Showcase interactive dashboards to draw insights from complex datasets and derive informed decision-making.",
+        imageUrl: "/projects/DA.png",
+        projectUrl: "https://public.tableau.com/app/profile/george.jereos.iii/vizzes", 
+        tags: ["SQL", "Tableau", "Python"]
     }
 ]
     return (
