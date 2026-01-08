@@ -28,7 +28,7 @@ const projects = [
         title: "Primewell Clinic Project",
         description: "SaaS platform for patients to book appointments, access medical records, and communicate with healthcare providers online.",
         imageUrl: "/projects/primewell.png",
-        projectUrl: "https://primewellclinic.com/",
+        projectUrl: "https://github.com/gtj1227/Primewell",
         tags: ["React", "TailwindCSS", "Javascript", "Node.js", "Express", "SQL"]
     }
 ]
